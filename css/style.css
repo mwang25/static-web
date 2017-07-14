@@ -12,6 +12,8 @@ body {
 .card {
   background-color: white;
   margin: 10px;
+  height: 250px;
+  overflow-y: scroll;
 }
 
 .text-colorful {
