@@ -19,27 +19,26 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h3 class="text-thin">(neural synapses + index cards =)</h3>
-          <h1 class="text-colorful text-bold title-super">SynapCards</h1>
+        <div class="col-xs-12">
+          <img src="images/colorful-network-synapcards.jpg" class="img-responsive" alt="synapcards logo">
         </div>
       </div>
       <div class="row menu-bar">
-        <div class="col-md-3 text-center">
+        <div class="col-xs-3 text-center">
           <a href="index.html">Home</a>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-xs-3 text-center">
           <a href="about.html">About</a>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-xs-3 text-center">
           TODO: search
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-xs-3 text-center">
           TODO: sign-in
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-xs-12">
           <h2>Design Notes</h2>
           <h3>Sections</h3>
           <p>
@@ -50,11 +49,12 @@
           <ol>
             <li>
               Top row of all cards should have card id on the left, and icons
-              in the middle, and a drop down menu on the right.
+              in the middle, and a drop down menu on the right.  Card is is a
+              hyperlink to the card itself.
             </li>
             <li>
-              Heart icon for likes.  Red like is like by
-              the author/owner of the card, pink like is by other people but
+              Heart icon for likes.  Red color is like by
+              the author/owner of the card, pink color is like by other people but
               not the author.  Below the icon is the total number of likes.
             </li>
             <li>
@@ -71,11 +71,33 @@
             someone else's card?  Seems hard to deal with.  They could just
             create a shared account.
           </p>
+          <h3>Card Drop down menu</h3>
+          <ol>
+            <li>If this card is owned by the viewer, then edit option.</li>
+            <li>
+              If this card is owned by the viewer, then sharing option.
+              Sharing allows the owner to make the card private, share with
+              other synapcard users, or make the card public.
+            </li>
+            <li>If this card is owned by the viewer, then archive option.</li>
+            <li>If this card is owned by the viewer, then delete option.</li>
+            <li>
+              If this card is not owned by the viwer, then copy option.
+              Copy will create a new card owned by the current viewer.  Once
+              the copy is made, the copy is independent of the original and
+              can diverge from the original card.
+            </li>
+            <li>
+              Everyone will have a meta info option, which shows meta info about
+              the card, such as creation date, last update date, etc.
+            </li>
+          </ol>
           <h3>Login</h3>
           <p>
             Support for users logging into their own accounts using
-            oath/google identification.  Once user is logged in, then sending
-            emails for updates will be easier to handle/authenticate/manage.
+            oath/google identification.  Login information is needed to
+            implement secure email updates, sharing, and support for multiple
+            users.
           </p>
           <p>
             Each user can optionally create a profile page for him/herself.
@@ -83,6 +105,11 @@
             cards the user has created, how
             many added last week, total views, total likes, when the user joined
             synapcards, etc.
+          </p>
+          <h3>Privacy</h3>
+          <p>
+            Every card, section, page will have privacy control.  They can be
+            set to private, shared with specific synapcard users, or public.
           </p>
         </div>
       </div>
